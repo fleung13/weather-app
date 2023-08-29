@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Merriweather:wght@700&family=Offside&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-card {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-header {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  color: blue;
+  font-weight: 600;
+}
+
+.weather-card-child {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.weather-card-main {
+  width: 400px;
+  border-top: 4px solid green !important;
+}
+
+.forecast-card {
+  border-top: 2px solid goldenrod !important;
+}
+.icon-container {
+  position: relative;
+  right: -50px;
+}
+
+.weather-description {
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.forecast-header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.forecast-date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px !important;
+  margin-bottom: 20px;
 }
