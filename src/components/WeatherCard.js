@@ -3,21 +3,21 @@
 import React from 'react'
 import { Card, Feed } from 'semantic-ui-react'
 import moment from 'moment';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCloud, faCloudBolt, faSunHaze, faCloudDrizzle, faUmbrella, faSnowflake, faSmog, faSun } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloud, faCloudBolt, faUmbrella, faSnowflake, faSmog, faSun } from '@fortawesome/free-solid-svg-icons';
 
 export default function WeatherCard(
     { temperature, city, humidity, sunrise, sunset, icon }) {
     let weatherIcons = null;
 
     if(icon === 'Haze'){
-        weatherIcons = <FontAwesomeIcon icon={faSunHaze} size="lg" color="#212121" />
+        weatherIcons = <FontAwesomeIcon icon={faSun} size="lg" color="#212121" />
     } 
     else if(icon === 'Thunderstorm'){
         weatherIcons  = <FontAwesomeIcon icon={faCloudBolt} size="lg" color="#212121" />
     } 
     else if (icon === 'Drizzle') {
-        weatherIcons = <FontAwesomeIcon icon={faCloudDrizzle} size="lg" color="#212121" />
+        weatherIcons = <FontAwesomeIcon icon={faCloud} size="lg" color="#212121" />
     } 
     else if (icon === 'Rain') {
         weatherIcons = <FontAwesomeIcon icon={faUmbrella} size="lg" color="#212121" />
@@ -31,9 +31,6 @@ export default function WeatherCard(
     else if (icon === 'Clear') {
         weatherIcons = <FontAwesomeIcon icon={faSun} size="lg" color="#212121" />
     }  
-    else if (icon === 'Clouds') {
-        weatherIcons = <FontAwesomeIcon icon={faCloud} size="lg" color="#212121" />
-    }
 
     return (
     <Card className="weather-card-main">

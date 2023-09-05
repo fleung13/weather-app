@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import './index.css';
 import Header from './components/Header';
 import WeatherCard from './components/WeatherCard';
 import Forecast from './components/Forecast';
